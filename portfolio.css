@@ -1,0 +1,547 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin:0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing:border-box;
+}
+body{
+    background-color:rgb(106, 25, 25);
+    color:#fff;
+}
+
+.container{
+    padding: 5px 2%;
+    
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    position: fixed;
+    gap:200px;
+    z-index:10;
+   /* backdrop-filter: blur(20px); */
+}
+.logo{
+    width:140px;
+    height:80px;
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin:10px 20px;
+
+}
+nav ul li a{
+    color:black;
+    text-decoration: none;
+    font-size:18px;
+    position:relative;
+    margin-left:50px;
+}
+nav ul li a::after{
+    content:'';
+    width:0;
+    height:3px;
+    background-color:white;
+    position:absolute;
+    left: 0;
+    bottom: -6px;
+    transition:0.5s;
+}
+nav ul li a:hover::after{
+    width:100%;
+
+
+}
+.introtext{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    font-size: 30px;
+    margin-top: 100px;
+    
+    
+    
+
+}
+.introtext h1{
+    font-size: 60px;
+    margin-top: 80px;
+    
+}
+.introtext h1 span{
+    color:black;
+}
+#profile{
+    
+    border:1px solid white;
+    border-radius: 50px;
+    margin-top:20px;
+    width:800px;
+    height:600px;
+    
+
+
+}
+/* ------------about--------- */
+.aboutimage{
+    width:400px;
+    height:500px;
+    margin-top: 100px;
+}
+#about{
+    padding :80px 0;
+    color:white;
+    margin-top: 100px;
+
+
+}
+.btn1{
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    Border:1px solid white;
+    border-radius:20px;
+}
+.about-col-2{
+    flex-basis: 60%;
+
+}
+.subtitle{
+    font-size: 50px;
+    font-weight: 700;
+    color:white;
+    margin-top: 100px;
+}
+.about-col-2 span{
+    color:black;
+}
+.parabout{
+    margin-top: 20px;;
+}
+.parabout span{
+    color:yellow;
+}
+.tab-titles{
+    display:flex;
+    margin:20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size:20px;
+    font-weight:500;
+    cursor:pointer;
+    position:relative;
+}
+.tab-links::after{
+    content:'';
+    width:0;
+    height:3px;
+    background-color: black;
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width:50px;
+
+}
+.tab-contents ul li{
+    list-style: none;
+    margin:10px 0;
+
+}
+.tab-contents ul li span{
+    color:rgb(0, 0, 0);
+    font-size:15px;
+}
+.tab-contents{
+    display:none;
+}
+.tab-contents.active-tab{
+    display:block;
+}
+
+/* --------skills------ */
+
+#skills{
+    padding: 20px 0;
+    margin-top: 200px;
+
+
+}
+
+.services-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top:150px;
+}
+.services-list div{
+    background-color: black;
+    padding:40px;
+    font-size:20px;
+    font-weight:300;
+    border:4px double white;
+    border-radius: 10PX;
+    transition:border 0.5s,transform 0.5s;
+
+
+
+}
+.services-list div i{
+    font-size: 60px;
+    margin-bottom:30px;
+
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight:500;
+    margin-bottom:15px;
+
+
+}
+.services-list div a{
+    text-decoration: none;
+    color:blue;
+    font-size: 12px;
+    margin-top:  20px;
+    display:inline-block;
+}
+.services-list div:hover{
+    border-color: red;
+    transform:translateY(-10px);
+
+}
+.subtitle2{
+    font-size: 50px;
+    font-weight: 700;
+    color:white;
+    margin-top: 100px;
+
+}
+.subtitle2 span{
+    color:black;
+}
+
+
+
+/* -------------portfolio----------- */
+
+#portfolio{
+    padding:50px 0;
+    margin-top: 100px;
+}
+.work-list{
+     display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top:40px;
+    margin-bottom: 100px;
+
+
+}
+.work{
+    border-radius: 10px;
+    position:relative;
+    overflow: hidden;
+}
+.work img{
+    width:100%;
+    border-radius: 10px;
+    display: block;
+    transition:transform 0.5s;
+}
+
+.layer{
+    width:100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position:absolute;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align:center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight:700;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color:black;
+}
+.layer p{
+    font-size: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color:black;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background-color: white;
+    width:60px;
+    height:60px;
+    border-radius: 50px;
+}
+.work:hover img{
+    transform:scale(1.1);
+
+}
+.work:hover .layer{
+    height:100%;
+
+}
+.btn{
+    display:block;
+    margin:50px auto;
+    width:fit-content;
+    border:1px solid white;
+    padding: 14px 50px;
+    text-decoration: none;
+    color:white;
+    transition: background 0.5s;
+
+}
+.btn:hover{
+    background: black;
+}
+.subtitle3{
+     font-size: 50px;
+    font-weight: 700;
+    color:white;
+    margin-top: 20px;
+
+}
+.subtitle3 span{
+    color:black;
+}
+
+/* ------------contact------------ */
+.contact-left{
+    flex-basis: 35%;
+
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+   margin-top:30px;
+   font-size: 20px;
+   
+}
+.contact-left p i{
+    color:white;
+    margin-right:15px;
+    font-size: 20px;
+
+}
+.social-icons{
+    margin-top: 30px;
+
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 40px;
+    margin-right: 15px;
+    color:black;
+    display: inline-block;
+    border:3px solid black;
+    border-radius: 50px;
+    background-color:white;
+    transition:transform 0.5s;
+}
+.social-icons a:hover{
+    color:rgb(97, 25, 223);
+    transform: translateY(-5px);
+}
+.contact-right form{
+    width:100%;
+    margin-top: 100px;
+
+
+}
+form input,form textarea{
+    width:100%;
+    border:0;
+    outline:none;
+    background:white;
+    padding:15px;
+    margin:15px 0;
+    color:black;
+    font-size:18px;
+    border-radius: 6px;
+
+}
+form .btn2{
+    background-color:black;
+    padding:14px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor:pointer;
+    display:block;
+    width:100%;
+    border:1px solid white;
+    text-decoration: none;
+    color:white;
+
+
+}
+.subtitle4{
+    margin-top: 150px;
+}
+.copyright{
+    width:100%;
+    text-align: center;
+    padding:25px;
+    background:grey;
+    font-weight: 300;
+    margin-top: 20px;
+    color:black;
+}
+.copyright i{
+    color:red;
+}
+/* ------------css for small screen--------- */
+nav .bx{
+    
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+    /* -----------intro text media query------ */
+    .introtext{
+        margin-top:100%;
+        font-size:16px;
+    }
+    .introtext h1{
+        font-size: 30px;
+    }
+    #profile{
+        width:500px;
+        height:450px;
+        margin-left: 10px;
+    }
+
+    /* -------------nav media query-------- */
+    nav .bx{
+    
+    display:block;
+    font-size: 25px;
+    
+}
+
+nav ul{
+    background:blue;
+    position:fixed;
+    top:0;
+    right:-200px;
+    width:200px;
+    height:100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+   
+
+}
+nav ul li{
+    display:block;
+    margin:25px;
+    
+}
+nav ul .bx{
+    position:absolute;
+    top:25px;
+    left:25px;
+    cursor: pointer;
+}
+
+.introtext{
+    margin-top: 50px;
+
+}
+/* ------------skills media query------------ */
+#skills{
+    margin-top: 20px;
+}
+.subtitle2{
+    margin-top: 50px;
+}
+.services-list{
+    margin-top: 50px;
+    
+    
+}
+.services-list div{
+    width:100;
+    height:200px;
+}
+.services-list div i{
+    font-size:30px;
+}
+.services-list div h2{
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top:1px;
+}
+.services-list div a{
+    font-size: 15px;
+    margin-top: 10px;
+}
+/* ----------portfolio media query ------- */
+
+#portfolio{
+    margin-top: 90px;
+}
+
+.subtitle3{
+    margin-top: 10px;
+    
+}
+.work-list{
+    margin-top: 10px;
+}
+ /* --------contact media */
+
+ .contact-left,.contact-right{
+    flex-basis: 100%;
+ }
+ /* -------------about mediaq--------- */
+ .about-col-1,.about-col-2{
+    flex-basis: 100%;
+ }
+ .about-col-2 h1{
+    font-size: 50px;
+ }
+
+
+   
+
+}
+
+

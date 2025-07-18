@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="portfolio.css">
+    <title>MUHAMMED HISHAM</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+   </script>
+   <script type="text/javascript">
+   (function(){
+      emailjs.init({ publicKey: "inJTGZ7x8XG3M5_Pj",});})();
+   </script>
+
+</head>
+<body>
+   
+    <div id="header">
+        <div class="container">
+             <nav>
+                <img src="images/logo.png.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class='bx bx-x' onclick="closemenu()"></i>
+                </ul>
+                <i  class='bx bx-menu' onclick="openmenu()"></i>
+            </nav>
+            
+            
+            <div class="introtext">
+               <h1>Hi,I'm <span>Hisham</span> <br>software engineer<br> <span>from kerala</span></h1>
+               
+                
+                <img src="images/myimage.png" id="profile" >
+            </div>
+           
+            
+        </div>
+       
+
+    </div>
+    <!-- ----------------about-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+            <div class="about-col-1">
+                <img src="images/aboutimg.jpg" class="aboutimage">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About<span> Me</span></h1>
+                <p class="parabout">I’m a passionate <span>Web Developer</span> focused on building responsive, user-friendly websites and web applications. With experience in front-end and back-end technologies like<span> HTML, CSS, JavaScript</span>,
+                   I love turning ideas into clean, functional, and visually appealing digital experiences.
+                   I pay strong attention to performance, accessibility, and modern design principles. Whether it’s crafting a sleek UI, integrating APIs, or optimizing a website for speed and SEO,
+                   I enjoy solving real-world problems through code.I’m always learning and adapting to new tools and frameworks to stay up-to-date in this fast-moving industry. 
+                   My goal is to build products that are not only technically solid but also intuitive for users.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                        <li><span>Internship</span><br>bridgeon</li>
+                    </ul>
+                </div>
+                  <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2022-2025</span><br>DEGREE IN BSC COMPUTER SCIENCE</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-col-3"></div>
+            </div>
+            <a href="images/myimage.png" download class="btn1">Dowload CV</a>
+        </div>
+    </div>
+
+    <!-- -------------SKILLS------------- -->
+
+    <div id="skills">
+        <div class="container">
+             <h1 class="subtitle2">MY<span> Skills</span></h1>
+             <div class="services-list">
+                <div>
+                    <i class='bx bxs-file-html' ></i>
+                    <h2>HTML</h2>
+                    <p>i'm pro in html</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class='bx bxl-css3' ></i>
+                    <h2>CSS</h2>
+                    <p>i'm pro in css</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class='bx bxl-javascript' ></i>
+                    <h2>JAVA SCRIPT</h2>
+                    <p>i'm pro in JS</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+             </div>
+
+        </div>
+
+    </div>
+    <!-- --------------portfolio--------------------- -->
+     <div id="portfolio">
+        <div class="container">
+             <h1 class="subtitle3">My <span>Projects</span></h1>
+             <div class="work-list">
+                <div class="work">
+                    <img src="images/work2.png">
+                    <div class="layer">
+                        <h3>W3 Schools</h3>
+                        <p>created w3 school nav bar by using <br>html and css. I am used css property for layouting the nav bar</p>
+                        <a href="images/day5task1.png"><i class='bx bx-link'></i></a>
+                    </div>
+                </div>
+                 <div class="work">
+                    <img src="images/work1.jpeg">
+                    <div class="layer">
+                        <h3>Easy My Trip webpage</h3>
+                        <p>Created easy my trip web page layout by using flex & grid in css  </p>
+                        <a href="images/clonetask.png"><i class='bx bx-link'></i></a>
+                    </div>
+                </div>
+                 <div class="work">
+                    <img src="images/work3.jpg">
+                    <div class="layer">
+                        <h3>Bank ATM</h3>
+                        <p>Created bank atm for user forn deposit,withraw,and balance checking .I'm created this by using java script </p>
+                        <a href="images/week3domtask.png"><i class='bx bx-link'></i></a>
+                    </div>
+                </div>
+             </div>
+            
+            
+        </div>
+
+     </div>
+     <!-- ------------contact------------------- -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle4">Contact Me</h1>
+                    <p><i class='bx bxs-send'></i>hishuhishu225@gmail.com</p>
+                    <p><i class='bx bx-phone'></i>8089177663</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/hishaam.mhmd?igsh=cGFnbjl0NTY1bHR1"><i class='bx bxl-instagram' ></i></a>
+                        <a href="https://www.facebook.com/share/1CbHPTE6yv/"><i class='bx bxl-facebook-circle' ></i></a>
+                        <a href="https://www.linkedin.com/in/muhammed-hisham-3ba60a354?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin-square' ></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" id="name" name="name" placeholder="enter your name" required/>
+                        <input type="email"id="email" name="email" placeholder="Your email" required/>
+                        <textarea id="message" name="message"  rows="16" placeholder="Your message"></textarea>
+                        <button type="button" class="btn2" onclick="sendEmail()">send</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>copyright @hisham<i class='bx bxs-heart' ></i></p>
+        </div>
+      </div>
+
+
+    <script src="portfolio.js">
+        
+    </script>
+</body>
+</html>
